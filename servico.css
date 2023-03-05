@@ -1,0 +1,251 @@
+
+body {
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	background-color: #FFFACD;
+}
+
+header {
+	background-color: #e8e8e8;
+}
+
+.boxHome {
+	width: 940px;
+	position: relative;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 80px;
+	right: 80px;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 25px;
+	font-size: 28px;
+}
+
+nav a {
+	color: #736b6b;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	
+}
+
+nav a:hover {
+	color: #009e35;
+	text-decoration: underline;
+}
+
+.destaque {
+	width: 100%;
+	max-height: auto;
+	object-fit: contain;
+}
+
+.principal p {
+	margin: 0 0 15px;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.tituloPetShop, .tituloDiferencial{
+	text-align: center;
+	font-size: 28px;
+	margin: 0 0 15px; /* 0 para cima 0 para direita e 15 para baixo*/
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+.diferencial{
+	text-align: center;
+	font-size: 28px;
+	margin: 0 0 15px; /* 0 para cima 0 para direita e 15 para baixo*/
+}
+
+.conteudoDiferencial {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.listaDiferencial {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+	font-weight: bold;
+}
+
+
+.itens {
+	line-height: 1.5;
+}
+
+.itens:first-child {
+	font-weight: bold;
+}
+
+.itens:before {
+	content: "\27a4"; /*simbolo de flechinha ao lado da lista*/
+}
+
+.diferencial {
+	width: 60%;
+	box-shadow: 10px 10px 8px 0 #8B7D6B;
+	margin-bottom: 30px;
+	transition: 600ms;
+}
+
+.diferencial:hover {
+	opacity: 0.3;
+}
+
+.servicos {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.servicos li {
+	display: inline-block;
+	text-align: center;
+	padding: 14px;
+	margin: 1.5%;
+	border: 2px double #949494;
+	border-radius: 15px 50px;
+}
+
+.servicos li:hover {
+	border-color: #009e35;
+}
+
+.servicos h2 {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.servicos .descricao {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.servicos .preco {
+	font-size: 25px;
+}
+
+main {
+	width: 940px;
+	margin: 0 auto;
+}
+
+form {
+	margin: 40px 0;
+}
+
+form label, form p {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px; /* 0px para cima e lado e 10px para baixo* > sequencia é cima, direita, embaixo e esquerda*/
+}
+
+.input-text { 
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px; /* 10px para cima e baixo e 25px para os lados*/
+	width: 50%; /*largura*/
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+
+.botaoEnviar{
+	width: 40%;
+	padding: 15px 0;
+	background-color: #009e35;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 12px 35px;
+	border: none;
+	cursor: pointer; /*fica com uma mãozinha em cima como se fosse link*/
+}
+
+.botaoEnviar:hover {
+	background: #fe858a;
+}
+
+table {
+	margin: 20px 0 40px;
+}
+
+.dias {
+	background: #555555;
+	color: white;
+	font-weight: bold; /*negrito*/
+}
+
+tr, td {
+	border: 1px solid #000000;
+	padding: 8px 15px;
+	font-weight: bold;
+}
+
+
+.video { 
+	width: 560px;
+	margin: 15px auto;
+}
+
+.mapa {
+	padding: 30px 0;
+}
+
+.mapa p {
+	margin: 0 0 20px;
+	text-align: center;
+}
+
+footer {
+	background-color: #e8e8e8;
+	text-align: center;
+	padding: 5%;
+}
+
+/* seletores abaixo são para colocar a página como responsiva para outros tipos de telas*/
+	
+@media screen and (max-height: 480px) {
+	header .principal, .conteudoDiferencial, .mapa, .video {
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		text-align: center;
+		position: static;
+	}
+
+	nav a {
+		font-size: 18px;
+	}
+
+	.listaDiferencial, .diferencial, main {
+		width: 100%;
+	}
+
+}	
+
+/* seletores acima são para colocar a página como responsiva para outros tipos de telas*/

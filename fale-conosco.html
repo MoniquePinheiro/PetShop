@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="servico.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+	
+		<title>Fale Conosco - Pet Shop Cão Feliz</title>
+</head>
+<body>
+	<header>
+		<div class="boxHome">
+			<h1>
+				<img width="150px" src="./logo-pet-shop.png" alt="Logo Pet Shop">
+			</h1>
+			<nav>
+				<ul>
+					<li><a href="home.index.html">Home</a></li>
+					<li><a href="servicos.html">Serviços</a></li>
+					<li><a href="fale-conosco.html">Fale Conosco</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main class="">
+		<form>
+			<label for="name">Nome: </label>	
+				<input type="text" id="name" class="input-text" required>
+
+			<label for="mail">E-mail: </label>	
+				<input type="email" id="mail" class="input-text" required>
+
+			<label for="telefone">Telefone: </label>	
+				<input type="number" id="telefone" class="input-text" required>
+
+			<label for="mensagem">Mensagem</label>	
+
+				<textarea cols="70" rows="10" id="mensagem" required></textarea>
+					
+				<fieldset>
+					<p>Como podemos entrar em contato?</p>
+
+					<label for="radio-whatsapp">
+						<input type="radio" name="contact" id="radio-whatsapp" value="Whatsapp" checked>Whatsapp
+					</label>
+
+					<label for="radio-telefone">
+						<input type="radio" name="contact" id="radio-telefone" value="Telefone">Telefone
+					</label>
+
+					<label for="radio-email">
+						<input type="radio" name="contact" id="radio-email" value="E-mail">E-mail
+					</label>
+
+				</fieldset>	
+
+				<label class="checkbox">
+					<input type="checkbox" id="novidades" checked>Quero receber e-mails promocionais.
+				</label>
+
+				<input type="submit" class="botaoEnviar">
+		</form>
+		<table>
+			<tr class="dias">
+				<td>Segunda à sexta</td>
+				<td>Aos sábados</td>
+				<td>Domingos</td>
+			</tr>
+			<tr>
+				<td>6Hrs - 20Hrs</td>
+				<td>10Hrs - 18Hrs</td>
+				<td>12Hrs - 18Hrs</td>
+			</tr>
+
+		</table>
+	</main>
+
+	<footer>
+		<img width="100px" src="./logo-pet-shop.png">
+		<p>&copy Copyright 2022</p>
+	</footer>	
+</body>
+</html>
